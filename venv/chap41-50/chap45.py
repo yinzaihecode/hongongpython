@@ -18,8 +18,8 @@
 #
 # ]
 
-#Key는 함수의 param으로 선언.
-#Value는 함수 호출시 넣어서 호출.
+#Key는 상수니 Return문에서 상수로 선언
+#Value는 변하는 값. 함수의 param으로 선언 + Return으로 리턴
 
 
 
