@@ -12,12 +12,32 @@ def factorial_1(n):
 
 
 # 요즘 파이썬
-
+# 메모화
 memo = {1: 1, 2: 1}
+
+
 def f(n):
     if n in memo:
-        return memo[n] #조기리턴
-    output = f(n-1) + f(n-2)
+        return memo[n]  # 조기리턴
+    output = f(n - 1) + f(n - 2)
     memo[n] = output
     return output
+
+
 print(f(150))
+
+# 조기리턴
+# if n in memo:
+#     return memo[n]  # 조기리턴
+# output = f(n - 1) + f(n - 2)
+# memo[n] = output
+# return output
+
+# 조기리턴
+# if n in memo:
+#   memo[n]  # 조기리턴
+# else
+# output = f(n - 1) + f(n - 2)
+# memo[n] = output
+# return output
+
